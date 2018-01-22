@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Wirecard Developer Portal</title>
+    <%= csrf_meta_tags %>
+
+    <link href="/Assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="/Assets/css/jquery.mCustomScrollbar.min.css" rel="stylesheet" />
+    <!-- Our Custom CSS -->
+    <link href="/Assets/css/style.css" rel="stylesheet" />
+  
+
+  </head>
+
+<body>
+<div class="wrapper">
+<nav id="sidebar">
+    <div class="sidebar-header">
+        <a href="/"><img src="/Assets/img/logo.png" width="130" height="26" /></a>
+        
+    </div>
+    <ul class="list-unstyled components">
+        <li>
+            <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false">Sms Ödeme Servisleri</a>
+            <ul class="collapse list-unstyled" id="homeSubmenu">    
+                <li> <%= link_to 'Basic Api', controller: 'home', action: 'index' %></li>
+                <li> <%= link_to 'Pro Api', controller: 'home', action: 'proapi' %></li>
+                <li> <%= link_to 'Api Plus', controller: 'home', action: 'apiplus' %></li>
+                <li> <%= link_to 'Bilgi Sms Gönderim Servisi', controller: 'home', action: 'informationsmsservice' %></li>
+
+                
+            </ul>
+        </li>
+        <li>
+            <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false">Abonelik Servisleri</a>
+            <ul class="collapse list-unstyled" id="pageSubmenu">
+            <li> <%= link_to 'Abonelik Listeleme', controller: 'home', action: 'subscriberselect' %></li>
+            <li> <%= link_to 'Abonelik Detay', controller: 'home', action: 'selectsubscriberdetail' %></li>
+            <li> <%= link_to 'Abonelik Sil', controller: 'home', action: 'deactivatesubscriber' %></li>
+            </ul>
+        </li>
+        <li>
+        <li> <%= link_to 'Ödeme Formu', controller: 'home', action: 'ccproxysaleform' %></li>
+            
+        </li>
+        <li>
+            <a href="#pageSubmenu2" data-toggle="collapse" aria-expanded="false">Ortak Ödeme Formu</a>
+            <ul class="collapse list-unstyled" id="pageSubmenu2">
+                <li> <%= link_to '3D Secure İle ödeme', controller: 'home', action: 'wdticketsale3durlproxy' %></li>
+                <li> <%= link_to '3D Secure Olmadan ödeme', controller: 'home', action: 'wdticketsaleurlproxy' %></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#pageSubmenu3" data-toggle="collapse" aria-expanded="false">Mağaza Servisleri</a>
+            <ul class="collapse list-unstyled" id="pageSubmenu3">
+
+                <li> <%= link_to 'Mağaza Oluştur', controller: 'home', action: 'marketplaceaddsubpartner' %></li>
+                <li> <%= link_to 'Mağaza Güncelle', controller: 'home', action: 'marketplaceupdatesubpartner' %></li>
+                <li> <%= link_to 'Mağaza Sil', controller: 'home', action: 'marketplacedeactivesubpartner' %></li>
+                <li> <%= link_to '3D Secure ile Ödeme ', controller: 'home', action: 'marketplacesale3dsec' %></li>
+                <li> <%= link_to '3D Secure olmadan Ödeme', controller: 'home', action: 'marketplacempsale' %></li>
+                <li> <%= link_to 'Ödeme Onay Servisi', controller: 'home', action: 'marketplacereleasepayment' %></li>
+            </ul>
+        </li>
+    </ul>  
+</nav>
+<div id="content">
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+
+            <div class="navbar-header">
+                <button type="button" id="sidebarCollapse" class="btn btn-info navbar-btn">
+                    <i class="glyphicon glyphicon-align-left"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+    <%= yield %>
+  
+</div>        
+</div>
+<script src="/Assets/js/jquery-1.10.2.min.js"></script>
+<script src="/Assets/js/bootstrap.min.js"></script>
+<script src="/Assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+<script type="text/javascript">
+     $(document).ready(function () {
+         $('#sidebarCollapse').on('click', function () {
+             $('#sidebar').toggleClass('active');
+         });
+     });
+    
+</script>
+
+</body>
+</html>
