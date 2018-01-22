@@ -41,7 +41,7 @@ require 'date'
         input.Country=""
         input.Currency=""
         input.Extra=""
-        input.TurkcellServiceId="20923735"
+        input.TurkcellServiceId=""
     
         req=Proapirequest.new
         proapi_result=req.execute(input,token) # soap servis çağrısının başladığı kısmı temsil etmektedir.
@@ -90,7 +90,7 @@ def apiplus
     input.RequestGsmOperator=0
     input.RequestGsmType=0
     input.Extra=""
-    input.TurkcellServiceId="20923735"
+    input.TurkcellServiceId=""
     input.CustomerIpAddress="127.0.0.1"
      #endregion 
     req=Apiplusrequest.new
