@@ -419,7 +419,8 @@ end
         req= Marketplacempsalerequest.new
         req.ServiceType = "CCMarketPlace"
         req.OperationType = "MPSale"
-        req.MPAY = ""
+        req.Price = "1";#0,01 TL
+        req.MPAY = "01"
         req.IPAddress = "127.0.0.1";
         req.Port = "123"
         req.Description = "Bilgisayar"
@@ -430,7 +431,6 @@ end
         req.SubPartnerId = params[:subPartnerId]
         req.ErrorURL = "http://localhost:3000/home/MarketPlaceError"
         req.SuccessURL = "http://localhost:3000/home/MarketPlaceSuccess"
-        req.CCTokenId = SecureRandom.uuid
         #region Token
         req.Token = Token.new
         req.Token.UserCode = @@settings.UserCode
@@ -443,8 +443,17 @@ end
         req.Creditcardinfo.ExpireYear =params[:expireYear] 
         req.Creditcardinfo.ExpireMonth =params[:expireMonth] 
         req.Creditcardinfo.Cvv =params[:cvv] 
-        req.Creditcardinfo.Price = "1";#0,01 TL
         #endregion
+
+        #region CardTokenization
+        req.Cardtokenization = Cardtokenization.new
+        req.Cardtokenization.RequestType ="0"
+        req.Cardtokenization.CustomerId ="01"
+        req.Cardtokenization.ValidityPeriod ="0"
+        req.Cardtokenization.CCTokenId =SecureRandom.uuid
+        
+        #endregion 
+
         @returnData= req.execute(req,@@settings) # xml servis çağrısının başladığı kısım
         p @returnData
       else

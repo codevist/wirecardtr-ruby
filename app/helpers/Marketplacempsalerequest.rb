@@ -7,6 +7,7 @@ class Marketplacempsalerequest
     attr_accessor :OperationType
     attr_accessor :Token
     attr_accessor :Creditcardinfo
+    attr_accessor :Price
     attr_accessor :MPAY
     attr_accessor :ExtraParam
     attr_accessor :Description
@@ -18,7 +19,7 @@ class Marketplacempsalerequest
     attr_accessor :CommissionRate
     attr_accessor :SubPartnerId
     attr_accessor :PaymentContent
-    attr_accessor :CCTokenId
+    attr_accessor :Cardtokenization
      
     def execute(req,settings)
         result= Core::HttpClient::post(settings.BaseUrl,self.to_xml(req));
@@ -33,7 +34,6 @@ class Marketplacempsalerequest
         <WIRECARD>
         <ServiceType>"+req.ServiceType+"</ServiceType>
         <OperationType>"+req.OperationType+"</OperationType>
-        <CCTokenId>"+req.CCTokenId+"</CCTokenId>
         <Token>
             <UserCode>"+req.Token.UserCode+"</UserCode>
             <Pin>"+req.Token.Pin+"</Pin>
@@ -44,9 +44,15 @@ class Marketplacempsalerequest
             <ExpireYear>"+req.Creditcardinfo.ExpireYear+"</ExpireYear>
             <ExpireMonth>"+req.Creditcardinfo.ExpireMonth+"</ExpireMonth>
             <Cvv>"+req.Creditcardinfo.Cvv+"</Cvv>
-            <Price>"+req.Creditcardinfo.Price+"</Price>
-	    </CreditCardInfo>
+        </CreditCardInfo>
+        <CardTokenization>
+            <RequestType>"+req.Cardtokenization.RequestType+"</RequestType>
+            <CustomerId>"+req.Cardtokenization.CustomerId+"</CustomerId>
+            <ValidityPeriod>"+req.Cardtokenization.ValidityPeriod+"</ValidityPeriod>
+            <CCTokenId>"+req.Cardtokenization.CCTokenId+"</CCTokenId>
+	    </CardTokenization>
             <MPAY>"+req.MPAY+"</MPAY>
+            <Price>"+req.Price+"</Price>
             <ExtraParam>"+req.ExtraParam+"</ExtraParam>
             <Description>"+req.Description+"</Description>
             <IPAddress>"+req.IPAddress+"</IPAddress>
