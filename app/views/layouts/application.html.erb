@@ -40,7 +40,18 @@
             </ul>
         </li>
         <li>
-        <li> <%= link_to 'Ödeme Formu', controller: 'home', action: 'ccproxysaleform' %></li>
+
+
+        <li>
+            <a href="#pageSubmenu4" data-toggle="collapse" aria-expanded="false">Ödeme Formu</a>
+            <ul class="collapse list-unstyled" id="pageSubmenu4">
+                <li> <%= link_to '3D Secure İle ödeme', controller: 'home', action: 'ccproxysale3dform' %></li>
+                <li> <%= link_to '3D Secure Olmadan ödeme', controller: 'home', action: 'ccproxysaleform' %></li>
+            </ul>
+        </li>
+
+
+       
             
         </li>
         <li>
@@ -62,6 +73,16 @@
                 <li> <%= link_to 'Ödeme Onay Servisi', controller: 'home', action: 'marketplacereleasepayment' %></li>
             </ul>
         </li>
+        <li>
+        <a href="#pageSubmenu5" data-toggle="collapse" aria-expanded="false">İşlem Sorgulama</a>
+        <ul class="collapse list-unstyled" id="pageSubmenu5">
+        <li> <%= link_to 'Sipariş Numarası ile İşlem Sorgulama', controller: 'home', action: 'transactionrequestorder' %></li>
+        <li> <%= link_to 'MPAY ile İşlem Sorgulama', controller: 'home', action: 'transactionrequestbympay' %></li>
+        
+    
+
+        </ul>
+    </li>
     </ul>  
 </nav>
 <div id="content">

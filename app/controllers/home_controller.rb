@@ -186,6 +186,46 @@ end
       end
     end
 
+
+    def transactionrequestorder
+      if request.post?
+
+        #region Token
+        token= Token.new
+        token.UserCode= @@settings.UserCode
+        token.Pin=@@settings.Pin
+        #endregion
+        req=Transactionrequestorder.new
+        transactionrequestorder_result= req.execute(params[:orderId],token) # soap servis çağrısının başladığı kısmı temsil etmektedir.
+
+        doc = REXML::Document.new transactionrequestorder_result # servis sonucunda oluşan cevabın ekranda gösterilmek üzere değişkene eklendiği kısımdır.
+        @xml_result = ""
+        doc.write(@xml_result, 1)
+      else
+      end
+    end
+
+
+    def transactionrequestbympay
+      if request.post?
+
+        #region Token
+        token= Token.new
+        token.UserCode= @@settings.UserCode
+        token.Pin=@@settings.Pin
+        #endregion
+        req=Transactionrequestbympay.new
+        transactionrequestbympay_result= req.execute(params[:mpay],token) # soap servis çağrısının başladığı kısmı temsil etmektedir.
+
+        doc = REXML::Document.new transactionrequestbympay_result # servis sonucunda oluşan cevabın ekranda gösterilmek üzere değişkene eklendiği kısımdır.
+        @xml_result = ""
+        doc.write(@xml_result, 1)
+      else
+      end
+    end
+
+
+
     # selectsubscriberdetail Action'ı temsil etmektedir.
     def deactivatesubscriber
       if request.post?
@@ -205,18 +245,22 @@ end
       end
     end
 
-     # ccproxysaleform Action'ı temsil etmektedir.
-    def ccproxysaleform
+
+     # ccproxysale3dform Action'ı temsil etmektedir.
+     def ccproxysale3dform
       if request.post?
-        req= Ccproxysalerequest.new
+        req= Ccproxysale3dequest.new
         req.ServiceType = "CCProxy"
-        req.OperationType = "Sale"
+        req.OperationType = "Sale3DSEC"
         req.MPAY = ""
         req.IPAddress = "127.0.0.1";
         req.PaymentContent = "BLGSYR01"
         req.InstallmentCount =params[:installmentCount] 
         req.Description = "Bilgisayar"
         req.ExtraParam = ""
+        req.Port = "123"
+        req.ErrorURL = "http://localhost:3000/home/fail"
+        req.SuccessURL = "http://localhost:3000/home/success"
         #region Token
         req.Token = Token.new
         req.Token.UserCode = @@settings.UserCode
@@ -231,6 +275,56 @@ end
         req.Creditcardinfo.Cvv =params[:cvv] 
         req.Creditcardinfo.Price = "1";#0,01 TL
         #endregion
+         #region CardTokenization
+         req.Cardtokenization = Cardtokenization.new
+         req.Cardtokenization.RequestType ="0"
+         req.Cardtokenization.CustomerId ="01"
+         req.Cardtokenization.ValidityPeriod ="0"
+         req.Cardtokenization.CCTokenId =SecureRandom.uuid
+         
+         #endregion 
+        @returnData= req.execute(req,@@settings) # xml servis çağrısının başladığı kısım
+      
+      else
+      end
+    end
+
+
+     # ccproxysaleform Action'ı temsil etmektedir.
+    def ccproxysaleform
+      if request.post?
+        req= Ccproxysalerequest.new
+        req.ServiceType = "CCProxy"
+        req.OperationType = "Sale"
+        req.MPAY = ""
+        req.IPAddress = "127.0.0.1";
+        req.PaymentContent = "BLGSYR01"
+        req.InstallmentCount =params[:installmentCount] 
+        req.Description = "Bilgisayar"
+        req.ExtraParam = ""
+        req.Port = "123"
+        #region Token
+        req.Token = Token.new
+        req.Token.UserCode = @@settings.UserCode
+        req.Token.Pin = @@settings.Pin 
+        #endregion
+        #region CreditCardInfo
+        req.Creditcardinfo = Creditcardinfo.new
+        req.Creditcardinfo.CreditCardNo = params[:creditCardNo]
+        req.Creditcardinfo.OwnerName =params[:ownerName] 
+        req.Creditcardinfo.ExpireYear =params[:expireYear] 
+        req.Creditcardinfo.ExpireMonth =params[:expireMonth] 
+        req.Creditcardinfo.Cvv =params[:cvv] 
+        req.Creditcardinfo.Price = "1";#0,01 TL
+        #endregion
+         #region CardTokenization
+         req.Cardtokenization = Cardtokenization.new
+         req.Cardtokenization.RequestType ="0"
+         req.Cardtokenization.CustomerId ="01"
+         req.Cardtokenization.ValidityPeriod ="0"
+         req.Cardtokenization.CCTokenId =SecureRandom.uuid
+         
+         #endregion 
         @returnData= req.execute(req,@@settings) # xml servis çağrısının başladığı kısım
       
       else
@@ -409,6 +503,14 @@ end
         req.Creditcardinfo.Cvv =params[:cvv] 
         req.Creditcardinfo.Price = "1";#0,01 TL
         #endregion
+         #region CardTokenization
+         req.Cardtokenization = Cardtokenization.new
+         req.Cardtokenization.RequestType ="0"
+         req.Cardtokenization.CustomerId ="01"
+         req.Cardtokenization.ValidityPeriod ="0"
+         req.Cardtokenization.CCTokenId =SecureRandom.uuid
+         
+         #endregion
         @returnData= req.execute(req,@@settings) # xml servis çağrısının başladığı kısım
       else
       end
@@ -429,8 +531,8 @@ end
         req.ExtraParam = ""
         req.PaymentContent = "BLGSYR01"
         req.SubPartnerId = params[:subPartnerId]
-        req.ErrorURL = "http://localhost:3000/home/MarketPlaceError"
-        req.SuccessURL = "http://localhost:3000/home/MarketPlaceSuccess"
+        req.ErrorURL = "http://localhost:3000/home/fail"
+        req.SuccessURL = "http://localhost:3000/home/success"
         #region Token
         req.Token = Token.new
         req.Token.UserCode = @@settings.UserCode
@@ -459,6 +561,10 @@ end
       else
       end
     end
+
+
+
+    
     #marketplacereleasepayment Action'ı temsil etmektedir.
     def marketplacereleasepayment
       if request.post?
@@ -486,4 +592,8 @@ end
     end
     def fail
     end
+
+   
+
+
 end

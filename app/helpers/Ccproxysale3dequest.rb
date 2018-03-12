@@ -1,9 +1,9 @@
 
-#Ccproxysalerequest xml servis çağrısının yapıldığı sınıfı temsil etmektedir.
-#Ccproxysalerequest sınıfına ait değişkenler bu sınıf içerisinde toplanmıştır.
+#Ccproxysaler3dequest xml servis çağrısının yapıldığı sınıfı temsil etmektedir.
+#Ccproxysaler3dequest sınıfına ait değişkenler bu sınıf içerisinde toplanmıştır.
 #Xml formatı oluşturularak settings sınıfı içerisinde bulunan baseurl adresine post edilmektedir.
 # soap çağrısı sonucunda oluşan xml çıktısı sonuç olarak dönderilmektedir.
-class Ccproxysalerequest
+class Ccproxysale3dequest
     attr_accessor :ServiceType
     attr_accessor :OperationType
     attr_accessor :Token
@@ -15,6 +15,8 @@ class Ccproxysalerequest
     attr_accessor :Description
     attr_accessor :ExtraParam
     attr_accessor :Port
+    attr_accessor :ErrorURL
+    attr_accessor :SuccessURL
     attr_accessor :Cardtokenization
 
     def execute(req,settings)
@@ -48,8 +50,10 @@ class Ccproxysalerequest
             <ValidityPeriod>"+req.Cardtokenization.ValidityPeriod+"</ValidityPeriod>
             <CCTokenId>"+req.Cardtokenization.CCTokenId+"</CCTokenId>
         </CardTokenization>
-            <MPAY>"+req.MPAY+"</MPAY> 
-            <Port>"+req.Port+"</Port>  
+            <MPAY>"+req.MPAY+"</MPAY>  
+            <Port>"+req.Port+"</Port> 
+            <ErrorURL>"+req.ErrorURL+"</ErrorURL>
+            <SuccessURL>"+req.SuccessURL+"</SuccessURL> 
             <IPAddress>"+req.IPAddress+"</IPAddress>
             <PaymentContent>"+req.PaymentContent+"</PaymentContent>
             <InstallmentCount>"+req.InstallmentCount+"</InstallmentCount>

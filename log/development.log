@@ -14595,3 +14595,1719 @@ Processing by HomeController#fail as HTML
 Completed 200 OK in 31ms (Views: 28.7ms)
 
 
+Started GET "/" for 127.0.0.1 at 2018-01-29 16:39:51 +0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 930ms (Views: 97.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-29 16:40:05 +0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 26ms (Views: 20.1ms)
+
+
+Started GET "/home/marketplacempsale" for 127.0.0.1 at 2018-01-29 16:40:25 +0300
+Processing by HomeController#marketplacempsale as HTML
+  Rendering home/marketplacempsale.erb within layouts/application
+  Rendered home/marketplacempsale.erb within layouts/application (1.0ms)
+Completed 200 OK in 36ms (Views: 21.9ms)
+
+
+Started GET "/home/marketplacempsale" for 127.0.0.1 at 2018-01-29 16:41:26 +0300
+Processing by HomeController#marketplacempsale as HTML
+  Rendering home/marketplacempsale.erb within layouts/application
+  Rendered home/marketplacempsale.erb within layouts/application (0.0ms)
+Completed 200 OK in 29ms (Views: 22.4ms)
+
+
+Started GET "/home/marketplacempsale" for 127.0.0.1 at 2018-01-29 16:41:31 +0300
+Processing by HomeController#marketplacempsale as HTML
+  Rendering home/marketplacempsale.erb within layouts/application
+  Rendered home/marketplacempsale.erb within layouts/application (0.0ms)
+Completed 200 OK in 26ms (Views: 20.4ms)
+
+
+Started GET "/home/marketplacempsale" for 127.0.0.1 at 2018-01-29 16:49:29 +0300
+Processing by HomeController#marketplacempsale as HTML
+  Rendering home/marketplacempsale.erb within layouts/application
+  Rendered home/marketplacempsale.erb within layouts/application (0.0ms)
+Completed 200 OK in 27ms (Views: 21.4ms)
+
+
+Started POST "/home/marketplacempsale" for 127.0.0.1 at 2018-01-29 16:49:33 +0300
+Processing by HomeController#marketplacempsale as HTML
+  Parameters: {"ownerName"=>"Ahmet Yılmaz", "creditCardNo"=>"4282209004348015", "expireMonth"=>"12", "expireYear"=>"2022", "cvv"=>"123", "subPartnerId"=>"774", "installmentCount"=>"0"}
+Completed 500 Internal Server Error in 14ms
+
+
+  
+NameError (uninitialized constant HomeController::CardTokenization):
+  
+app/controllers/home_controller.rb:449:in `marketplacempsale'
+Started GET "/home/marketplacempsale" for 127.0.0.1 at 2018-01-29 16:51:27 +0300
+Processing by HomeController#marketplacempsale as HTML
+  Rendering home/marketplacempsale.erb within layouts/application
+  Rendered home/marketplacempsale.erb within layouts/application (0.0ms)
+Completed 200 OK in 27ms (Views: 21.1ms)
+
+
+Started POST "/home/marketplacempsale" for 127.0.0.1 at 2018-01-29 16:51:30 +0300
+Processing by HomeController#marketplacempsale as HTML
+  Parameters: {"ownerName"=>"Ahmet Yılmaz", "creditCardNo"=>"4282209004348015", "expireMonth"=>"12", "expireYear"=>"2022", "cvv"=>"123", "subPartnerId"=>"774", "installmentCount"=>"0"}
+Completed 500 Internal Server Error in 10ms
+
+
+  
+NameError (uninitialized constant HomeController::CardTokenization):
+  
+app/controllers/home_controller.rb:449:in `marketplacempsale'
+Started GET "/home/marketplacempsale" for 127.0.0.1 at 2018-01-29 16:53:02 +0300
+Processing by HomeController#marketplacempsale as HTML
+  Rendering home/marketplacempsale.erb within layouts/application
+  Rendered home/marketplacempsale.erb within layouts/application (1.0ms)
+Completed 200 OK in 40ms (Views: 35.1ms)
+
+
+Started POST "/home/marketplacempsale" for 127.0.0.1 at 2018-01-29 16:53:04 +0300
+Processing by HomeController#marketplacempsale as HTML
+  Parameters: {"ownerName"=>"Ahmet Yılmaz", "creditCardNo"=>"4282209004348015", "expireMonth"=>"12", "expireYear"=>"2022", "cvv"=>"123", "subPartnerId"=>"774", "installmentCount"=>"0"}
+Completed 500 Internal Server Error in 14ms
+
+
+  
+NameError (uninitialized constant HomeController::CardTokenization):
+  
+app/controllers/home_controller.rb:449:in `marketplacempsale'
+Started GET "/home/marketplacempsale" for 127.0.0.1 at 2018-01-29 16:53:30 +0300
+Processing by HomeController#marketplacempsale as HTML
+  Rendering home/marketplacempsale.erb within layouts/application
+  Rendered home/marketplacempsale.erb within layouts/application (1.0ms)
+Completed 200 OK in 29ms (Views: 24.1ms)
+
+
+Started POST "/home/marketplacempsale" for 127.0.0.1 at 2018-01-29 16:53:32 +0300
+Processing by HomeController#marketplacempsale as HTML
+  Parameters: {"ownerName"=>"Ahmet Yılmaz", "creditCardNo"=>"4282209004348015", "expireMonth"=>"12", "expireYear"=>"2022", "cvv"=>"123", "subPartnerId"=>"774", "installmentCount"=>"0"}
+Completed 500 Internal Server Error in 58ms
+
+
+  
+NoMethodError (undefined method `CCTokenId' for #<Marketplacempsalerequest:0x0000000da22c38>
+Did you mean?  Token):
+  
+app/helpers/marketplacempsalerequest.rb:37:in `to_xml'
+app/helpers/marketplacempsalerequest.rb:25:in `execute'
+app/controllers/home_controller.rb:457:in `marketplacempsale'
+Started GET "/home/marketplacempsale" for 127.0.0.1 at 2018-01-29 16:54:46 +0300
+Processing by HomeController#marketplacempsale as HTML
+  Rendering home/marketplacempsale.erb within layouts/application
+  Rendered home/marketplacempsale.erb within layouts/application (1.0ms)
+Completed 200 OK in 29ms (Views: 23.4ms)
+
+
+Started POST "/home/marketplacempsale" for 127.0.0.1 at 2018-01-29 16:54:49 +0300
+Processing by HomeController#marketplacempsale as HTML
+  Parameters: {"ownerName"=>"Ahmet Yılmaz", "creditCardNo"=>"4282209004348015", "expireMonth"=>"12", "expireYear"=>"2022", "cvv"=>"123", "subPartnerId"=>"774", "installmentCount"=>"0"}
+Completed 500 Internal Server Error in 2ms
+
+
+  
+SyntaxError (D:/wirecardgithub/wirecardtr-ruby/app/helpers/marketplacempsalerequest.rb:53: syntax error, unexpected tINTEGER, expecting keyword_end
+...           <CCTokenId>"49953828-c798-4d4a-a79f-3ea964cad2a5"...
+...                               ^
+D:/wirecardgithub/wirecardtr-ruby/app/helpers/marketplacempsalerequest.rb:53: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+... <CCTokenId>"49953828-c798-4d4a-a79f-3ea964cad2a5"</CCTokenI...
+...                               ^
+D:/wirecardgithub/wirecardtr-ruby/app/helpers/marketplacempsalerequest.rb:53: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+...828-c798-4d4a-a79f-3ea964cad2a5"</CCTokenId>
+...                               ^):
+  
+app/helpers/marketplacempsalerequest.rb:53: syntax error, unexpected tINTEGER, expecting keyword_end
+app/helpers/marketplacempsalerequest.rb:53: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/helpers/marketplacempsalerequest.rb:53: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/home_controller.rb:419:in `marketplacempsale'
+Started GET "/home/marketplacempsale" for 127.0.0.1 at 2018-01-29 16:55:26 +0300
+Processing by HomeController#marketplacempsale as HTML
+  Rendering home/marketplacempsale.erb within layouts/application
+  Rendered home/marketplacempsale.erb within layouts/application (1.0ms)
+Completed 200 OK in 29ms (Views: 21.6ms)
+
+
+Started POST "/home/marketplacempsale" for 127.0.0.1 at 2018-01-29 16:55:30 +0300
+Processing by HomeController#marketplacempsale as HTML
+  Parameters: {"ownerName"=>"Ahmet Yılmaz", "creditCardNo"=>"4282209004348015", "expireMonth"=>"12", "expireYear"=>"2022", "cvv"=>"123", "subPartnerId"=>"774", "installmentCount"=>"0"}
+Completed 500 Internal Server Error in 10ms
+
+
+  
+NoMethodError (undefined method `CCTokenId' for #<Marketplacempsalerequest:0x0000000e6ce3b0>
+Did you mean?  Token):
+  
+app/helpers/marketplacempsalerequest.rb:37:in `to_xml'
+app/helpers/marketplacempsalerequest.rb:25:in `execute'
+app/controllers/home_controller.rb:457:in `marketplacempsale'
+Started GET "/home/marketplacempsale" for 127.0.0.1 at 2018-01-29 16:56:15 +0300
+Processing by HomeController#marketplacempsale as HTML
+  Rendering home/marketplacempsale.erb within layouts/application
+  Rendered home/marketplacempsale.erb within layouts/application (1.0ms)
+Completed 200 OK in 30ms (Views: 24.0ms)
+
+
+Started POST "/home/marketplacempsale" for 127.0.0.1 at 2018-01-29 16:56:17 +0300
+Processing by HomeController#marketplacempsale as HTML
+  Parameters: {"ownerName"=>"Ahmet Yılmaz", "creditCardNo"=>"4282209004348015", "expireMonth"=>"12", "expireYear"=>"2022", "cvv"=>"123", "subPartnerId"=>"774", "installmentCount"=>"0"}
+Completed 500 Internal Server Error in 7ms
+
+
+  
+NoMethodError (undefined method `CCTokenId' for #<Marketplacempsalerequest:0x0000000ec8b2d0>
+Did you mean?  Token):
+  
+app/helpers/marketplacempsalerequest.rb:37:in `to_xml'
+app/helpers/marketplacempsalerequest.rb:25:in `execute'
+app/controllers/home_controller.rb:457:in `marketplacempsale'
+Started GET "/home/marketplacempsale" for 127.0.0.1 at 2018-01-29 16:56:42 +0300
+Processing by HomeController#marketplacempsale as HTML
+  Rendering home/marketplacempsale.erb within layouts/application
+  Rendered home/marketplacempsale.erb within layouts/application (1.0ms)
+Completed 200 OK in 26ms (Views: 20.1ms)
+
+
+Started POST "/home/marketplacempsale" for 127.0.0.1 at 2018-01-29 16:56:45 +0300
+Processing by HomeController#marketplacempsale as HTML
+  Parameters: {"ownerName"=>"Ahmet Yılmaz", "creditCardNo"=>"4282209004348015", "expireMonth"=>"12", "expireYear"=>"2022", "cvv"=>"123", "subPartnerId"=>"774", "installmentCount"=>"0"}
+  Rendering home/marketplacempsale.erb within layouts/application
+  Rendered home/marketplacempsale.erb within layouts/application (1.0ms)
+Completed 200 OK in 189ms (Views: 22.8ms)
+
+
+Started GET "/home/marketplacempsale" for 127.0.0.1 at 2018-01-29 16:57:15 +0300
+Processing by HomeController#marketplacempsale as HTML
+  Rendering home/marketplacempsale.erb within layouts/application
+  Rendered home/marketplacempsale.erb within layouts/application (1.0ms)
+Completed 200 OK in 31ms (Views: 24.1ms)
+
+
+Started POST "/home/marketplacempsale" for 127.0.0.1 at 2018-01-29 16:57:17 +0300
+Processing by HomeController#marketplacempsale as HTML
+  Parameters: {"ownerName"=>"Ahmet Yılmaz", "creditCardNo"=>"4282209004348015", "expireMonth"=>"12", "expireYear"=>"2022", "cvv"=>"123", "subPartnerId"=>"774", "installmentCount"=>"0"}
+  Rendering home/marketplacempsale.erb within layouts/application
+  Rendered home/marketplacempsale.erb within layouts/application (1.0ms)
+Completed 200 OK in 171ms (Views: 21.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-10 17:28:10 +0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 777ms (Views: 80.9ms)
+
+
+Started GET "/CCProxySale" for 127.0.0.1 at 2018-03-10 17:48:08 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/CCProxySale"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/CCProxySale" for 127.0.0.1 at 2018-03-10 17:49:12 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/CCProxySale"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/CCProxySale" for 127.0.0.1 at 2018-03-10 17:49:55 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/CCProxySale"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2018-03-10 17:52:49 +0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 31ms (Views: 23.6ms)
+
+
+Started GET "/home/ccproxysaleform" for 127.0.0.1 at 2018-03-10 17:52:55 +0300
+Processing by HomeController#ccproxysaleform as HTML
+  Rendering home/ccproxysaleform.erb within layouts/application
+  Rendered home/ccproxysaleform.erb within layouts/application (1.0ms)
+Completed 200 OK in 33ms (Views: 22.7ms)
+
+
+Started GET "/home/ccproxysale3dform" for 127.0.0.1 at 2018-03-10 17:52:57 +0300
+Processing by HomeController#ccproxysale3dform as HTML
+  Rendering home/ccproxysale3dform.erb within layouts/application
+  Rendered home/ccproxysale3dform.erb within layouts/application (1.0ms)
+Completed 200 OK in 30ms (Views: 23.9ms)
+
+
+Started GET "/home/ccproxysaleform" for 127.0.0.1 at 2018-03-10 17:52:59 +0300
+Processing by HomeController#ccproxysaleform as HTML
+  Rendering home/ccproxysaleform.erb within layouts/application
+  Rendered home/ccproxysaleform.erb within layouts/application (1.0ms)
+Completed 200 OK in 32ms (Views: 23.6ms)
+
+
+Started GET "/home/ccproxysale3dform" for 127.0.0.1 at 2018-03-10 17:53:01 +0300
+Processing by HomeController#ccproxysale3dform as HTML
+  Rendering home/ccproxysale3dform.erb within layouts/application
+  Rendered home/ccproxysale3dform.erb within layouts/application (1.0ms)
+Completed 200 OK in 32ms (Views: 23.7ms)
+
+
+Started GET "/home/wdticketsale3durlproxy" for 127.0.0.1 at 2018-03-10 17:53:03 +0300
+Processing by HomeController#wdticketsale3durlproxy as HTML
+  Rendering home/wdticketsale3durlproxy.erb within layouts/application
+  Rendered home/wdticketsale3durlproxy.erb within layouts/application (0.0ms)
+Completed 200 OK in 68ms (Views: 20.0ms)
+
+
+Started GET "/home/wdticketsaleurlproxy" for 127.0.0.1 at 2018-03-10 17:53:05 +0300
+Processing by HomeController#wdticketsaleurlproxy as HTML
+  Rendering home/wdticketsaleurlproxy.erb within layouts/application
+  Rendered home/wdticketsaleurlproxy.erb within layouts/application (0.0ms)
+Completed 200 OK in 98ms (Views: 26.6ms)
+
+
+Started GET "/home/marketplaceaddsubpartner" for 127.0.0.1 at 2018-03-10 17:53:07 +0300
+Processing by HomeController#marketplaceaddsubpartner as HTML
+  Rendering home/marketplaceaddsubpartner.erb within layouts/application
+  Rendered home/marketplaceaddsubpartner.erb within layouts/application (1.0ms)
+Completed 200 OK in 43ms (Views: 25.7ms)
+
+
+Started GET "/home/ccproxysaleform" for 127.0.0.1 at 2018-03-10 17:53:11 +0300
+Processing by HomeController#ccproxysaleform as HTML
+  Rendering home/ccproxysaleform.erb within layouts/application
+  Rendered home/ccproxysaleform.erb within layouts/application (1.0ms)
+Completed 200 OK in 31ms (Views: 21.9ms)
+
+
+Started POST "/home/ccproxysaleform" for 127.0.0.1 at 2018-03-10 17:53:13 +0300
+Processing by HomeController#ccproxysaleform as HTML
+  Parameters: {"ownerName"=>"Ahmet Yılmaz", "creditCardNo"=>"4282209004348015", "expireMonth"=>"12", "expireYear"=>"2022", "cvv"=>"123", "installmentCount"=>"0"}
+  Rendering home/ccproxysaleform.erb within layouts/application
+  Rendered home/ccproxysaleform.erb within layouts/application (1.0ms)
+Completed 200 OK in 343ms (Views: 25.1ms)
+
+
+Started GET "/home/ccproxysaleform" for 127.0.0.1 at 2018-03-10 17:53:51 +0300
+Processing by HomeController#ccproxysaleform as HTML
+  Rendering home/ccproxysaleform.erb within layouts/application
+  Rendered home/ccproxysaleform.erb within layouts/application (0.0ms)
+Completed 200 OK in 29ms (Views: 22.8ms)
+
+
+Started POST "/home/ccproxysaleform" for 127.0.0.1 at 2018-03-10 17:53:53 +0300
+Processing by HomeController#ccproxysaleform as HTML
+  Parameters: {"ownerName"=>"Ahmet Yılmaz", "creditCardNo"=>"4282209004348015", "expireMonth"=>"12", "expireYear"=>"2022", "cvv"=>"123", "installmentCount"=>"0"}
+  Rendering home/ccproxysaleform.erb within layouts/application
+  Rendered home/ccproxysaleform.erb within layouts/application (0.0ms)
+Completed 200 OK in 2484ms (Views: 24.1ms)
+
+
+Started GET "/home/ccproxysaleform" for 127.0.0.1 at 2018-03-10 18:00:10 +0300
+Processing by HomeController#ccproxysaleform as HTML
+  Rendering home/ccproxysaleform.erb within layouts/application
+  Rendered home/ccproxysaleform.erb within layouts/application (1.0ms)
+Completed 200 OK in 35ms (Views: 28.0ms)
+
+
+Started POST "/home/ccproxysaleform" for 127.0.0.1 at 2018-03-10 18:00:12 +0300
+Processing by HomeController#ccproxysaleform as HTML
+  Parameters: {"ownerName"=>"Ahmet Yılmaz", "creditCardNo"=>"4282209004348015", "expireMonth"=>"12", "expireYear"=>"2022", "cvv"=>"123", "installmentCount"=>"0"}
+  Rendering home/ccproxysaleform.erb within layouts/application
+  Rendered home/ccproxysaleform.erb within layouts/application (1.0ms)
+Completed 200 OK in 4114ms (Views: 44.4ms)
+
+
+Started GET "/home/ccproxysaleform" for 127.0.0.1 at 2018-03-10 18:01:14 +0300
+Processing by HomeController#ccproxysaleform as HTML
+  Rendering home/ccproxysaleform.erb within layouts/application
+  Rendered home/ccproxysaleform.erb within layouts/application (1.0ms)
+Completed 200 OK in 45ms (Views: 31.9ms)
+
+
+Started GET "/home/ccproxysaleform" for 127.0.0.1 at 2018-03-10 18:01:16 +0300
+Processing by HomeController#ccproxysaleform as HTML
+  Rendering home/ccproxysaleform.erb within layouts/application
+  Rendered home/ccproxysaleform.erb within layouts/application (1.0ms)
+Completed 200 OK in 30ms (Views: 23.9ms)
+
+
+Started GET "/home/ccproxysaleform" for 127.0.0.1 at 2018-03-10 18:01:20 +0300
+Processing by HomeController#ccproxysaleform as HTML
+  Rendering home/ccproxysaleform.erb within layouts/application
+  Rendered home/ccproxysaleform.erb within layouts/application (0.0ms)
+Completed 200 OK in 31ms (Views: 24.5ms)
+
+
+Started GET "/home/ccproxysale3dform" for 127.0.0.1 at 2018-03-10 18:01:22 +0300
+Processing by HomeController#ccproxysale3dform as HTML
+  Rendering home/ccproxysale3dform.erb within layouts/application
+  Rendered home/ccproxysale3dform.erb within layouts/application (1.0ms)
+Completed 200 OK in 32ms (Views: 26.2ms)
+
+
+Started POST "/home/ccproxysale3dform" for 127.0.0.1 at 2018-03-10 18:01:24 +0300
+Processing by HomeController#ccproxysale3dform as HTML
+  Parameters: {"ownerName"=>"Ahmet Yılmaz", "creditCardNo"=>"4282209004348015", "expireMonth"=>"12", "expireYear"=>"2022", "cvv"=>"123", "installmentCount"=>"0"}
+  Rendering home/ccproxysale3dform.erb within layouts/application
+  Rendered home/ccproxysale3dform.erb within layouts/application (1.0ms)
+Completed 200 OK in 168ms (Views: 19.0ms)
+
+
+Started GET "/home/subscriberselect" for 127.0.0.1 at 2018-03-10 18:01:33 +0300
+Processing by HomeController#subscriberselect as HTML
+  Rendering home/subscriberselect.erb within layouts/application
+  Rendered home/subscriberselect.erb within layouts/application (0.0ms)
+Completed 200 OK in 79ms (Views: 22.0ms)
+
+
+Started GET "/Assets/css/images/ui-icons_444444_256x240.png" for 127.0.0.1 at 2018-03-10 18:01:39 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/Assets/css/images/ui-icons_444444_256x240.png"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/Assets/css/images/ui-icons_555555_256x240.png" for 127.0.0.1 at 2018-03-10 18:01:44 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/Assets/css/images/ui-icons_555555_256x240.png"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started POST "/home/subscriberselect" for 127.0.0.1 at 2018-03-10 18:01:49 +0300
+Processing by HomeController#subscriberselect as HTML
+  Parameters: {"gsm"=>"0543801881", "subscriberTypeId"=>"1", "orderChannelId"=>"100", "activeTypeId"=>"1", "startDateMin"=>"01.01.2018", "startDateMax"=>"11.03.2018", "lastSuccessfulPaymentDateMin"=>"01.03.2018", "lastSuccessfulPaymentDateMax"=>"29.03.2018"}
+  Rendering home/subscriberselect.erb within layouts/application
+  Rendered home/subscriberselect.erb within layouts/application (1.0ms)
+Completed 200 OK in 1467ms (Views: 30.4ms)
+
+
+Started GET "/home/ccproxysaleform" for 127.0.0.1 at 2018-03-10 18:01:58 +0300
+Processing by HomeController#ccproxysaleform as HTML
+  Rendering home/ccproxysaleform.erb within layouts/application
+  Rendered home/ccproxysaleform.erb within layouts/application (0.0ms)
+Completed 200 OK in 43ms (Views: 36.3ms)
+
+
+Started POST "/home/ccproxysaleform" for 127.0.0.1 at 2018-03-10 18:01:59 +0300
+Processing by HomeController#ccproxysaleform as HTML
+  Parameters: {"ownerName"=>"Ahmet Yılmaz", "creditCardNo"=>"4282209004348015", "expireMonth"=>"12", "expireYear"=>"2022", "cvv"=>"123", "installmentCount"=>"0"}
+  Rendering home/ccproxysaleform.erb within layouts/application
+  Rendered home/ccproxysaleform.erb within layouts/application (0.0ms)
+Completed 200 OK in 4300ms (Views: 47.3ms)
+
+
+Started GET "/home/ccproxysale3dform" for 127.0.0.1 at 2018-03-10 18:02:43 +0300
+Processing by HomeController#ccproxysale3dform as HTML
+  Rendering home/ccproxysale3dform.erb within layouts/application
+  Rendered home/ccproxysale3dform.erb within layouts/application (1.0ms)
+Completed 200 OK in 50ms (Views: 35.1ms)
+
+
+Started GET "/home/wdticketsaleurlproxy" for 127.0.0.1 at 2018-03-10 18:02:46 +0300
+Processing by HomeController#wdticketsaleurlproxy as HTML
+  Rendering home/wdticketsaleurlproxy.erb within layouts/application
+  Rendered home/wdticketsaleurlproxy.erb within layouts/application (0.0ms)
+Completed 200 OK in 28ms (Views: 23.0ms)
+
+
+Started GET "/home/ccproxysaleform" for 127.0.0.1 at 2018-03-10 18:02:49 +0300
+Processing by HomeController#ccproxysaleform as HTML
+  Rendering home/ccproxysaleform.erb within layouts/application
+  Rendered home/ccproxysaleform.erb within layouts/application (1.0ms)
+Completed 200 OK in 31ms (Views: 23.0ms)
+
+
+Started GET "/home/ccproxysale3dform" for 127.0.0.1 at 2018-03-10 18:02:51 +0300
+Processing by HomeController#ccproxysale3dform as HTML
+  Rendering home/ccproxysale3dform.erb within layouts/application
+  Rendered home/ccproxysale3dform.erb within layouts/application (1.0ms)
+Completed 200 OK in 37ms (Views: 31.3ms)
+
+
+Started GET "/home/ccproxysale3dform" for 127.0.0.1 at 2018-03-10 18:03:01 +0300
+Processing by HomeController#ccproxysale3dform as HTML
+  Rendering home/ccproxysale3dform.erb within layouts/application
+  Rendered home/ccproxysale3dform.erb within layouts/application (0.0ms)
+Completed 200 OK in 25ms (Views: 19.5ms)
+
+
+Started POST "/home/ccproxysale3dform" for 127.0.0.1 at 2018-03-10 18:03:02 +0300
+Processing by HomeController#ccproxysale3dform as HTML
+  Parameters: {"ownerName"=>"Ahmet Yılmaz", "creditCardNo"=>"4282209004348015", "expireMonth"=>"12", "expireYear"=>"2022", "cvv"=>"123", "installmentCount"=>"0"}
+  Rendering home/ccproxysale3dform.erb within layouts/application
+  Rendered home/ccproxysale3dform.erb within layouts/application (1.0ms)
+Completed 200 OK in 163ms (Views: 20.7ms)
+
+
+Started GET "/home/ccproxysale3dform" for 127.0.0.1 at 2018-03-10 18:03:33 +0300
+Processing by HomeController#ccproxysale3dform as HTML
+  Rendering home/ccproxysale3dform.erb within layouts/application
+  Rendered home/ccproxysale3dform.erb within layouts/application (0.0ms)
+Completed 200 OK in 39ms (Views: 24.8ms)
+
+
+Started GET "/home/ccproxysaleform" for 127.0.0.1 at 2018-03-10 18:03:37 +0300
+Processing by HomeController#ccproxysaleform as HTML
+  Rendering home/ccproxysaleform.erb within layouts/application
+  Rendered home/ccproxysaleform.erb within layouts/application (0.0ms)
+Completed 200 OK in 34ms (Views: 25.9ms)
+
+
+Started POST "/home/ccproxysaleform" for 127.0.0.1 at 2018-03-10 18:03:39 +0300
+Processing by HomeController#ccproxysaleform as HTML
+  Parameters: {"ownerName"=>"Ahmet Yılmaz", "creditCardNo"=>"4282209004348015", "expireMonth"=>"12", "expireYear"=>"2022", "cvv"=>"123", "installmentCount"=>"0"}
+  Rendering home/ccproxysaleform.erb within layouts/application
+  Rendered home/ccproxysaleform.erb within layouts/application (0.0ms)
+Completed 200 OK in 2124ms (Views: 53.9ms)
+
+
+Started GET "/home/ccproxysale3dform" for 127.0.0.1 at 2018-03-10 18:03:46 +0300
+Processing by HomeController#ccproxysale3dform as HTML
+  Rendering home/ccproxysale3dform.erb within layouts/application
+  Rendered home/ccproxysale3dform.erb within layouts/application (0.0ms)
+Completed 200 OK in 26ms (Views: 21.3ms)
+
+
+Started POST "/home/ccproxysale3dform" for 127.0.0.1 at 2018-03-10 18:03:48 +0300
+Processing by HomeController#ccproxysale3dform as HTML
+  Parameters: {"ownerName"=>"Ahmet Yılmaz", "creditCardNo"=>"4282209004348015", "expireMonth"=>"12", "expireYear"=>"2022", "cvv"=>"123", "installmentCount"=>"0"}
+  Rendering home/ccproxysale3dform.erb within layouts/application
+  Rendered home/ccproxysale3dform.erb within layouts/application (1.0ms)
+Completed 200 OK in 173ms (Views: 28.5ms)
+
+
+Started POST "/home/ccproxysale3dform" for 127.0.0.1 at 2018-03-10 18:04:39 +0300
+Processing by HomeController#ccproxysale3dform as HTML
+  Parameters: {"ownerName"=>"Ahmet Yılmaz", "creditCardNo"=>"4282209004348015", "expireMonth"=>"12", "expireYear"=>"2022", "cvv"=>"123", "installmentCount"=>"0"}
+  Rendering home/ccproxysale3dform.erb within layouts/application
+  Rendered home/ccproxysale3dform.erb within layouts/application (1.0ms)
+Completed 200 OK in 180ms (Views: 35.3ms)
+
+
+Started GET "/home/ccproxysaleform" for 127.0.0.1 at 2018-03-10 18:04:52 +0300
+Processing by HomeController#ccproxysaleform as HTML
+  Rendering home/ccproxysaleform.erb within layouts/application
+  Rendered home/ccproxysaleform.erb within layouts/application (1.0ms)
+Completed 200 OK in 31ms (Views: 24.2ms)
+
+
+Started POST "/home/ccproxysaleform" for 127.0.0.1 at 2018-03-10 18:04:54 +0300
+Processing by HomeController#ccproxysaleform as HTML
+  Parameters: {"ownerName"=>"Ahmet Yılmaz", "creditCardNo"=>"4282209004348015", "expireMonth"=>"12", "expireYear"=>"2022", "cvv"=>"123", "installmentCount"=>"0"}
+  Rendering home/ccproxysaleform.erb within layouts/application
+  Rendered home/ccproxysaleform.erb within layouts/application (0.0ms)
+Completed 200 OK in 2371ms (Views: 20.2ms)
+
+
+Started GET "/home/ccproxysale3dform" for 127.0.0.1 at 2018-03-10 18:05:02 +0300
+Processing by HomeController#ccproxysale3dform as HTML
+  Rendering home/ccproxysale3dform.erb within layouts/application
+  Rendered home/ccproxysale3dform.erb within layouts/application (1.0ms)
+Completed 200 OK in 34ms (Views: 27.2ms)
+
+
+Started POST "/home/ccproxysale3dform" for 127.0.0.1 at 2018-03-10 18:05:04 +0300
+Processing by HomeController#ccproxysale3dform as HTML
+  Parameters: {"ownerName"=>"Ahmet Yılmaz", "creditCardNo"=>"4282209004348015", "expireMonth"=>"12", "expireYear"=>"2022", "cvv"=>"123", "installmentCount"=>"0"}
+  Rendering home/ccproxysale3dform.erb within layouts/application
+  Rendered home/ccproxysale3dform.erb within layouts/application (1.0ms)
+Completed 200 OK in 176ms (Views: 25.5ms)
+
+
+Started GET "/home/ccproxysale3dform" for 127.0.0.1 at 2018-03-10 18:05:41 +0300
+Processing by HomeController#ccproxysale3dform as HTML
+  Rendering home/ccproxysale3dform.erb within layouts/application
+  Rendered home/ccproxysale3dform.erb within layouts/application (1.0ms)
+Completed 200 OK in 29ms (Views: 23.0ms)
+
+
+Started POST "/home/ccproxysale3dform" for 127.0.0.1 at 2018-03-10 18:05:43 +0300
+Processing by HomeController#ccproxysale3dform as HTML
+  Parameters: {"ownerName"=>"Ahmet Yılmaz", "creditCardNo"=>"4282209004348015", "expireMonth"=>"12", "expireYear"=>"2022", "cvv"=>"123", "installmentCount"=>"0"}
+  Rendering home/ccproxysale3dform.erb within layouts/application
+  Rendered home/ccproxysale3dform.erb within layouts/application (1.0ms)
+Completed 200 OK in 264ms (Views: 42.2ms)
+
+
+Started GET "/home/ccproxysale3dform" for 127.0.0.1 at 2018-03-10 18:10:53 +0300
+Processing by HomeController#ccproxysale3dform as HTML
+  Rendering home/ccproxysale3dform.erb within layouts/application
+  Rendered home/ccproxysale3dform.erb within layouts/application (0.5ms)
+Completed 200 OK in 29ms (Views: 22.4ms)
+
+
+Started GET "/home/ccproxysaleform" for 127.0.0.1 at 2018-03-10 18:10:55 +0300
+Processing by HomeController#ccproxysaleform as HTML
+  Rendering home/ccproxysaleform.erb within layouts/application
+  Rendered home/ccproxysaleform.erb within layouts/application (0.5ms)
+Completed 200 OK in 30ms (Views: 24.0ms)
+
+
+Started POST "/home/ccproxysaleform" for 127.0.0.1 at 2018-03-10 18:10:57 +0300
+Processing by HomeController#ccproxysaleform as HTML
+  Parameters: {"ownerName"=>"Ahmet Yılmaz", "creditCardNo"=>"4282209004348015", "expireMonth"=>"12", "expireYear"=>"2022", "cvv"=>"123", "installmentCount"=>"0"}
+  Rendering home/ccproxysaleform.erb within layouts/application
+  Rendered home/ccproxysaleform.erb within layouts/application (0.5ms)
+Completed 200 OK in 294ms (Views: 37.0ms)
+
+
+Started GET "/home/marketplacesale3dsec" for 127.0.0.1 at 2018-03-10 18:11:06 +0300
+Processing by HomeController#marketplacesale3dsec as HTML
+  Rendering home/marketplacesale3dsec.erb within layouts/application
+  Rendered home/marketplacesale3dsec.erb within layouts/application (0.5ms)
+Completed 200 OK in 78ms (Views: 20.0ms)
+
+
+Started GET "/home/marketplacesale3dsec" for 127.0.0.1 at 2018-03-10 18:12:22 +0300
+Processing by HomeController#marketplacesale3dsec as HTML
+  Rendering home/marketplacesale3dsec.erb within layouts/application
+  Rendered home/marketplacesale3dsec.erb within layouts/application (1.0ms)
+Completed 200 OK in 30ms (Views: 23.2ms)
+
+
+Started POST "/home/marketplacesale3dsec" for 127.0.0.1 at 2018-03-10 18:12:26 +0300
+Processing by HomeController#marketplacesale3dsec as HTML
+  Parameters: {"ownerName"=>"Ahmet Yılmaz", "creditCardNo"=>"4282209004348015", "expireMonth"=>"12", "expireYear"=>"2022", "cvv"=>"123", "subPartnerId"=>"774", "installmentCount"=>"0"}
+Completed 500 Internal Server Error in 14ms
+
+
+  
+NoMethodError (undefined method `RequestType' for nil:NilClass):
+  
+app/helpers/marketplacesale3dsecurerequest.rb:49:in `to_xml'
+app/helpers/marketplacesale3dsecurerequest.rb:24:in `execute'
+app/controllers/home_controller.rb:466:in `marketplacesale3dsec'
+Started GET "/home/marketplacesale3dsec" for 127.0.0.1 at 2018-03-10 18:13:10 +0300
+Processing by HomeController#marketplacesale3dsec as HTML
+  Rendering home/marketplacesale3dsec.erb within layouts/application
+  Rendered home/marketplacesale3dsec.erb within layouts/application (0.5ms)
+Completed 200 OK in 29ms (Views: 23.3ms)
+
+
+Started POST "/home/marketplacesale3dsec" for 127.0.0.1 at 2018-03-10 18:13:13 +0300
+Processing by HomeController#marketplacesale3dsec as HTML
+  Parameters: {"ownerName"=>"Ahmet Yılmaz", "creditCardNo"=>"4282209004348015", "expireMonth"=>"12", "expireYear"=>"2022", "cvv"=>"123", "subPartnerId"=>"774", "installmentCount"=>"0"}
+  Rendering home/marketplacesale3dsec.erb within layouts/application
+  Rendered home/marketplacesale3dsec.erb within layouts/application (0.5ms)
+Completed 200 OK in 243ms (Views: 21.3ms)
+
+
+Started GET "/home/marketplacempsale" for 127.0.0.1 at 2018-03-10 18:13:19 +0300
+Processing by HomeController#marketplacempsale as HTML
+  Rendering home/marketplacempsale.erb within layouts/application
+  Rendered home/marketplacempsale.erb within layouts/application (0.5ms)
+Completed 200 OK in 80ms (Views: 25.2ms)
+
+
+Started POST "/home/marketplacempsale" for 127.0.0.1 at 2018-03-10 18:13:22 +0300
+Processing by HomeController#marketplacempsale as HTML
+  Parameters: {"ownerName"=>"Ahmet Yılmaz", "creditCardNo"=>"4282209004348015", "expireMonth"=>"12", "expireYear"=>"2022", "cvv"=>"123", "subPartnerId"=>"774", "installmentCount"=>"0"}
+  Rendering home/marketplacempsale.erb within layouts/application
+  Rendered home/marketplacempsale.erb within layouts/application (0.5ms)
+Completed 200 OK in 1489ms (Views: 38.2ms)
+
+
+Started GET "/home/marketplacempsale" for 127.0.0.1 at 2018-03-10 18:24:08 +0300
+Processing by HomeController#marketplacempsale as HTML
+  Rendering home/marketplacempsale.erb within layouts/application
+  Rendered home/marketplacempsale.erb within layouts/application (0.5ms)
+Completed 500 Internal Server Error in 41ms
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"transactionrequestbympay", :controller=>"home"}):
+    77:         <a href="#pageSubmenu5" data-toggle="collapse" aria-expanded="false">İşlem Sorgulama</a>
+    78:         <ul class="collapse list-unstyled" id="pageSubmenu5">
+    79:         <li> <%= link_to 'Sipariş Numarası ile İşlem Sorgulama', controller: 'home', action: 'transactionrequestbyorderid' %></li>
+    80:         <li> <%= link_to 'MPAY ile İşlem Sorgulama', controller: 'home', action: 'transactionrequestbympay' %></li>
+    81: 
+    82:         </ul>
+    83:     </li>
+  
+app/views/layouts/application.html.erb:80:in `_app_views_layouts_application_html_erb___659673380_111782500'
+Started GET "/home/marketplacempsale" for 127.0.0.1 at 2018-03-10 18:24:22 +0300
+Processing by HomeController#marketplacempsale as HTML
+  Rendering home/marketplacempsale.erb within layouts/application
+  Rendered home/marketplacempsale.erb within layouts/application (1.0ms)
+Completed 500 Internal Server Error in 40ms
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"transactionrequestbympay", :controller=>"home"}):
+    77:         <a href="#pageSubmenu5" data-toggle="collapse" aria-expanded="false">İşlem Sorgulama</a>
+    78:         <ul class="collapse list-unstyled" id="pageSubmenu5">
+    79:         <li> <%= link_to 'Sipariş Numarası ile İşlem Sorgulama', controller: 'home', action: 'transactionrequestbyorderid' %></li>
+    80:         # <li> <%= link_to 'MPAY ile İşlem Sorgulama', controller: 'home', action: 'transactionrequestbympay' %></li>
+    81: 
+    82:         </ul>
+    83:     </li>
+  
+app/views/layouts/application.html.erb:80:in `_app_views_layouts_application_html_erb___659673380_117381080'
+Started GET "/home/marketplacempsale" for 127.0.0.1 at 2018-03-10 18:24:33 +0300
+Processing by HomeController#marketplacempsale as HTML
+  Rendering home/marketplacempsale.erb within layouts/application
+  Rendered home/marketplacempsale.erb within layouts/application (1.0ms)
+Completed 200 OK in 35ms (Views: 25.5ms)
+
+
+Started GET "/home/transactionrequestbyorderid" for 127.0.0.1 at 2018-03-10 18:24:36 +0300
+  
+AbstractController::ActionNotFound (The action 'transactionrequestbyorderid' could not be found for HomeController):
+  
+actionpack (5.1.4) lib/abstract_controller/base.rb:119:in `process'
+actionview (5.1.4) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.1.4) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.4) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:834:in `call'
+rack (2.0.3) lib/rack/etag.rb:25:in `call'
+rack (2.0.3) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.3) lib/rack/head.rb:12:in `call'
+rack (2.0.3) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.3) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.4) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.4) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/home/transactionrequestbyorderid" for 127.0.0.1 at 2018-03-10 18:26:44 +0300
+Processing by HomeController#transactionrequestbyorderid as HTML
+Completed 406 Not Acceptable in 302ms
+
+
+  
+ActionController::UnknownFormat (HomeController#transactionrequestbyorderid is missing a template for this request format and variant.
+
+request.formats: ["text/html"]
+request.variant: []
+
+NOTE! For XHR/Ajax or API requests, this action would normally respond with 204 No Content: an empty white screen. Since you're loading it in a web browser, we assume that you expected to actually render a template, not nothing, so we're showing an error to be extra-clear. If you expect 204 No Content, carry on. That's what you'll get from an XHR or API request. Give it a shot.):
+  
+actionpack (5.1.4) lib/action_controller/metal/implicit_render.rb:53:in `default_render'
+actionpack (5.1.4) lib/action_controller/metal/basic_implicit_render.rb:4:in `block in send_action'
+actionpack (5.1.4) lib/action_controller/metal/basic_implicit_render.rb:4:in `tap'
+actionpack (5.1.4) lib/action_controller/metal/basic_implicit_render.rb:4:in `send_action'
+actionpack (5.1.4) lib/abstract_controller/base.rb:186:in `process_action'
+actionpack (5.1.4) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (5.1.4) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+activesupport (5.1.4) lib/active_support/callbacks.rb:131:in `run_callbacks'
+actionpack (5.1.4) lib/abstract_controller/callbacks.rb:19:in `process_action'
+actionpack (5.1.4) lib/action_controller/metal/rescue.rb:20:in `process_action'
+actionpack (5.1.4) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+activesupport (5.1.4) lib/active_support/notifications.rb:166:in `block in instrument'
+activesupport (5.1.4) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+activesupport (5.1.4) lib/active_support/notifications.rb:166:in `instrument'
+actionpack (5.1.4) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+actionpack (5.1.4) lib/action_controller/metal/params_wrapper.rb:252:in `process_action'
+activerecord (5.1.4) lib/active_record/railties/controller_runtime.rb:22:in `process_action'
+actionpack (5.1.4) lib/abstract_controller/base.rb:124:in `process'
+actionview (5.1.4) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.1.4) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.4) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:834:in `call'
+rack (2.0.3) lib/rack/etag.rb:25:in `call'
+rack (2.0.3) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.3) lib/rack/head.rb:12:in `call'
+rack (2.0.3) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.3) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.4) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.4) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/home/transactionrequestbyorderid" for 127.0.0.1 at 2018-03-10 18:27:19 +0300
+  
+AbstractController::ActionNotFound (The action 'transactionrequestbyorderid' could not be found for HomeController):
+  
+actionpack (5.1.4) lib/abstract_controller/base.rb:119:in `process'
+actionview (5.1.4) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.1.4) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.4) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:834:in `call'
+rack (2.0.3) lib/rack/etag.rb:25:in `call'
+rack (2.0.3) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.3) lib/rack/head.rb:12:in `call'
+rack (2.0.3) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.3) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.4) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.4) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/home/transactionrequestbyorderid" for 127.0.0.1 at 2018-03-10 18:27:34 +0300
+Processing by HomeController#transactionrequestbyorderid as HTML
+Completed 406 Not Acceptable in 301ms
+
+
+  
+ActionController::UnknownFormat (HomeController#transactionrequestbyorderid is missing a template for this request format and variant.
+
+request.formats: ["text/html"]
+request.variant: []
+
+NOTE! For XHR/Ajax or API requests, this action would normally respond with 204 No Content: an empty white screen. Since you're loading it in a web browser, we assume that you expected to actually render a template, not nothing, so we're showing an error to be extra-clear. If you expect 204 No Content, carry on. That's what you'll get from an XHR or API request. Give it a shot.):
+  
+actionpack (5.1.4) lib/action_controller/metal/implicit_render.rb:53:in `default_render'
+actionpack (5.1.4) lib/action_controller/metal/basic_implicit_render.rb:4:in `block in send_action'
+actionpack (5.1.4) lib/action_controller/metal/basic_implicit_render.rb:4:in `tap'
+actionpack (5.1.4) lib/action_controller/metal/basic_implicit_render.rb:4:in `send_action'
+actionpack (5.1.4) lib/abstract_controller/base.rb:186:in `process_action'
+actionpack (5.1.4) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (5.1.4) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+activesupport (5.1.4) lib/active_support/callbacks.rb:131:in `run_callbacks'
+actionpack (5.1.4) lib/abstract_controller/callbacks.rb:19:in `process_action'
+actionpack (5.1.4) lib/action_controller/metal/rescue.rb:20:in `process_action'
+actionpack (5.1.4) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+activesupport (5.1.4) lib/active_support/notifications.rb:166:in `block in instrument'
+activesupport (5.1.4) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+activesupport (5.1.4) lib/active_support/notifications.rb:166:in `instrument'
+actionpack (5.1.4) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+actionpack (5.1.4) lib/action_controller/metal/params_wrapper.rb:252:in `process_action'
+activerecord (5.1.4) lib/active_record/railties/controller_runtime.rb:22:in `process_action'
+actionpack (5.1.4) lib/abstract_controller/base.rb:124:in `process'
+actionview (5.1.4) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.1.4) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.4) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:834:in `call'
+rack (2.0.3) lib/rack/etag.rb:25:in `call'
+rack (2.0.3) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.3) lib/rack/head.rb:12:in `call'
+rack (2.0.3) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.3) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.4) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.4) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/home/transactionrequestbyorderid" for 127.0.0.1 at 2018-03-10 18:28:51 +0300
+Processing by HomeController#transactionrequestbyorderid as HTML
+Completed 406 Not Acceptable in 299ms
+
+
+  
+ActionController::UnknownFormat (HomeController#transactionrequestbyorderid is missing a template for this request format and variant.
+
+request.formats: ["text/html"]
+request.variant: []
+
+NOTE! For XHR/Ajax or API requests, this action would normally respond with 204 No Content: an empty white screen. Since you're loading it in a web browser, we assume that you expected to actually render a template, not nothing, so we're showing an error to be extra-clear. If you expect 204 No Content, carry on. That's what you'll get from an XHR or API request. Give it a shot.):
+  
+actionpack (5.1.4) lib/action_controller/metal/implicit_render.rb:53:in `default_render'
+actionpack (5.1.4) lib/action_controller/metal/basic_implicit_render.rb:4:in `block in send_action'
+actionpack (5.1.4) lib/action_controller/metal/basic_implicit_render.rb:4:in `tap'
+actionpack (5.1.4) lib/action_controller/metal/basic_implicit_render.rb:4:in `send_action'
+actionpack (5.1.4) lib/abstract_controller/base.rb:186:in `process_action'
+actionpack (5.1.4) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (5.1.4) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+activesupport (5.1.4) lib/active_support/callbacks.rb:131:in `run_callbacks'
+actionpack (5.1.4) lib/abstract_controller/callbacks.rb:19:in `process_action'
+actionpack (5.1.4) lib/action_controller/metal/rescue.rb:20:in `process_action'
+actionpack (5.1.4) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+activesupport (5.1.4) lib/active_support/notifications.rb:166:in `block in instrument'
+activesupport (5.1.4) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+activesupport (5.1.4) lib/active_support/notifications.rb:166:in `instrument'
+actionpack (5.1.4) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+actionpack (5.1.4) lib/action_controller/metal/params_wrapper.rb:252:in `process_action'
+activerecord (5.1.4) lib/active_record/railties/controller_runtime.rb:22:in `process_action'
+actionpack (5.1.4) lib/abstract_controller/base.rb:124:in `process'
+actionview (5.1.4) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.1.4) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.4) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:834:in `call'
+rack (2.0.3) lib/rack/etag.rb:25:in `call'
+rack (2.0.3) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.3) lib/rack/head.rb:12:in `call'
+rack (2.0.3) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.3) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.4) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.4) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2018-03-10 18:29:14 +0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 27ms (Views: 21.0ms)
+
+
+Started GET "/home/transactionrequestbyorderid" for 127.0.0.1 at 2018-03-10 18:29:18 +0300
+Processing by HomeController#transactionrequestbyorderid as HTML
+Completed 406 Not Acceptable in 325ms
+
+
+  
+ActionController::UnknownFormat (HomeController#transactionrequestbyorderid is missing a template for this request format and variant.
+
+request.formats: ["text/html"]
+request.variant: []
+
+NOTE! For XHR/Ajax or API requests, this action would normally respond with 204 No Content: an empty white screen. Since you're loading it in a web browser, we assume that you expected to actually render a template, not nothing, so we're showing an error to be extra-clear. If you expect 204 No Content, carry on. That's what you'll get from an XHR or API request. Give it a shot.):
+  
+actionpack (5.1.4) lib/action_controller/metal/implicit_render.rb:53:in `default_render'
+actionpack (5.1.4) lib/action_controller/metal/basic_implicit_render.rb:4:in `block in send_action'
+actionpack (5.1.4) lib/action_controller/metal/basic_implicit_render.rb:4:in `tap'
+actionpack (5.1.4) lib/action_controller/metal/basic_implicit_render.rb:4:in `send_action'
+actionpack (5.1.4) lib/abstract_controller/base.rb:186:in `process_action'
+actionpack (5.1.4) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (5.1.4) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+activesupport (5.1.4) lib/active_support/callbacks.rb:131:in `run_callbacks'
+actionpack (5.1.4) lib/abstract_controller/callbacks.rb:19:in `process_action'
+actionpack (5.1.4) lib/action_controller/metal/rescue.rb:20:in `process_action'
+actionpack (5.1.4) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+activesupport (5.1.4) lib/active_support/notifications.rb:166:in `block in instrument'
+activesupport (5.1.4) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+activesupport (5.1.4) lib/active_support/notifications.rb:166:in `instrument'
+actionpack (5.1.4) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+actionpack (5.1.4) lib/action_controller/metal/params_wrapper.rb:252:in `process_action'
+activerecord (5.1.4) lib/active_record/railties/controller_runtime.rb:22:in `process_action'
+actionpack (5.1.4) lib/abstract_controller/base.rb:124:in `process'
+actionview (5.1.4) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.1.4) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.4) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:834:in `call'
+rack (2.0.3) lib/rack/etag.rb:25:in `call'
+rack (2.0.3) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.3) lib/rack/head.rb:12:in `call'
+rack (2.0.3) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.3) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.4) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.4) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/home/transactionrequestbyorderid" for 127.0.0.1 at 2018-03-10 18:29:58 +0300
+Processing by HomeController#transactionrequestbyorderid as HTML
+Completed 406 Not Acceptable in 297ms
+
+
+  
+ActionController::UnknownFormat (HomeController#transactionrequestbyorderid is missing a template for this request format and variant.
+
+request.formats: ["text/html"]
+request.variant: []
+
+NOTE! For XHR/Ajax or API requests, this action would normally respond with 204 No Content: an empty white screen. Since you're loading it in a web browser, we assume that you expected to actually render a template, not nothing, so we're showing an error to be extra-clear. If you expect 204 No Content, carry on. That's what you'll get from an XHR or API request. Give it a shot.):
+  
+actionpack (5.1.4) lib/action_controller/metal/implicit_render.rb:53:in `default_render'
+actionpack (5.1.4) lib/action_controller/metal/basic_implicit_render.rb:4:in `block in send_action'
+actionpack (5.1.4) lib/action_controller/metal/basic_implicit_render.rb:4:in `tap'
+actionpack (5.1.4) lib/action_controller/metal/basic_implicit_render.rb:4:in `send_action'
+actionpack (5.1.4) lib/abstract_controller/base.rb:186:in `process_action'
+actionpack (5.1.4) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (5.1.4) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+activesupport (5.1.4) lib/active_support/callbacks.rb:131:in `run_callbacks'
+actionpack (5.1.4) lib/abstract_controller/callbacks.rb:19:in `process_action'
+actionpack (5.1.4) lib/action_controller/metal/rescue.rb:20:in `process_action'
+actionpack (5.1.4) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+activesupport (5.1.4) lib/active_support/notifications.rb:166:in `block in instrument'
+activesupport (5.1.4) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+activesupport (5.1.4) lib/active_support/notifications.rb:166:in `instrument'
+actionpack (5.1.4) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+actionpack (5.1.4) lib/action_controller/metal/params_wrapper.rb:252:in `process_action'
+activerecord (5.1.4) lib/active_record/railties/controller_runtime.rb:22:in `process_action'
+actionpack (5.1.4) lib/abstract_controller/base.rb:124:in `process'
+actionview (5.1.4) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.1.4) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.4) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:834:in `call'
+rack (2.0.3) lib/rack/etag.rb:25:in `call'
+rack (2.0.3) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.3) lib/rack/head.rb:12:in `call'
+rack (2.0.3) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.3) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.4) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.4) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/home/transactionrequestbyorderid" for 127.0.0.1 at 2018-03-10 18:32:05 +0300
+Processing by HomeController#transactionrequestbyorderid as HTML
+Completed 406 Not Acceptable in 302ms
+
+
+  
+ActionController::UnknownFormat (HomeController#transactionrequestbyorderid is missing a template for this request format and variant.
+
+request.formats: ["text/html"]
+request.variant: []
+
+NOTE! For XHR/Ajax or API requests, this action would normally respond with 204 No Content: an empty white screen. Since you're loading it in a web browser, we assume that you expected to actually render a template, not nothing, so we're showing an error to be extra-clear. If you expect 204 No Content, carry on. That's what you'll get from an XHR or API request. Give it a shot.):
+  
+actionpack (5.1.4) lib/action_controller/metal/implicit_render.rb:53:in `default_render'
+actionpack (5.1.4) lib/action_controller/metal/basic_implicit_render.rb:4:in `block in send_action'
+actionpack (5.1.4) lib/action_controller/metal/basic_implicit_render.rb:4:in `tap'
+actionpack (5.1.4) lib/action_controller/metal/basic_implicit_render.rb:4:in `send_action'
+actionpack (5.1.4) lib/abstract_controller/base.rb:186:in `process_action'
+actionpack (5.1.4) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (5.1.4) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+activesupport (5.1.4) lib/active_support/callbacks.rb:131:in `run_callbacks'
+actionpack (5.1.4) lib/abstract_controller/callbacks.rb:19:in `process_action'
+actionpack (5.1.4) lib/action_controller/metal/rescue.rb:20:in `process_action'
+actionpack (5.1.4) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+activesupport (5.1.4) lib/active_support/notifications.rb:166:in `block in instrument'
+activesupport (5.1.4) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+activesupport (5.1.4) lib/active_support/notifications.rb:166:in `instrument'
+actionpack (5.1.4) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+actionpack (5.1.4) lib/action_controller/metal/params_wrapper.rb:252:in `process_action'
+activerecord (5.1.4) lib/active_record/railties/controller_runtime.rb:22:in `process_action'
+actionpack (5.1.4) lib/abstract_controller/base.rb:124:in `process'
+actionview (5.1.4) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.1.4) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.4) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:834:in `call'
+rack (2.0.3) lib/rack/etag.rb:25:in `call'
+rack (2.0.3) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.3) lib/rack/head.rb:12:in `call'
+rack (2.0.3) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.3) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.4) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.4) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2018-03-10 18:32:11 +0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 33ms (Views: 26.3ms)
+
+
+Started GET "/home/index" for 127.0.0.1 at 2018-03-10 18:32:14 +0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 34ms (Views: 25.2ms)
+
+
+Started GET "/home/index" for 127.0.0.1 at 2018-03-10 18:33:24 +0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 34ms (Views: 28.5ms)
+
+
+Started GET "/home/transactionrequestorder" for 127.0.0.1 at 2018-03-10 18:33:28 +0300
+Processing by HomeController#transactionrequestorder as HTML
+Completed 406 Not Acceptable in 315ms
+
+
+  
+ActionController::UnknownFormat (HomeController#transactionrequestorder is missing a template for this request format and variant.
+
+request.formats: ["text/html"]
+request.variant: []
+
+NOTE! For XHR/Ajax or API requests, this action would normally respond with 204 No Content: an empty white screen. Since you're loading it in a web browser, we assume that you expected to actually render a template, not nothing, so we're showing an error to be extra-clear. If you expect 204 No Content, carry on. That's what you'll get from an XHR or API request. Give it a shot.):
+  
+actionpack (5.1.4) lib/action_controller/metal/implicit_render.rb:53:in `default_render'
+actionpack (5.1.4) lib/action_controller/metal/basic_implicit_render.rb:4:in `block in send_action'
+actionpack (5.1.4) lib/action_controller/metal/basic_implicit_render.rb:4:in `tap'
+actionpack (5.1.4) lib/action_controller/metal/basic_implicit_render.rb:4:in `send_action'
+actionpack (5.1.4) lib/abstract_controller/base.rb:186:in `process_action'
+actionpack (5.1.4) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (5.1.4) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+activesupport (5.1.4) lib/active_support/callbacks.rb:131:in `run_callbacks'
+actionpack (5.1.4) lib/abstract_controller/callbacks.rb:19:in `process_action'
+actionpack (5.1.4) lib/action_controller/metal/rescue.rb:20:in `process_action'
+actionpack (5.1.4) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+activesupport (5.1.4) lib/active_support/notifications.rb:166:in `block in instrument'
+activesupport (5.1.4) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+activesupport (5.1.4) lib/active_support/notifications.rb:166:in `instrument'
+actionpack (5.1.4) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+actionpack (5.1.4) lib/action_controller/metal/params_wrapper.rb:252:in `process_action'
+activerecord (5.1.4) lib/active_record/railties/controller_runtime.rb:22:in `process_action'
+actionpack (5.1.4) lib/abstract_controller/base.rb:124:in `process'
+actionview (5.1.4) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.1.4) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.4) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:834:in `call'
+rack (2.0.3) lib/rack/etag.rb:25:in `call'
+rack (2.0.3) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.3) lib/rack/head.rb:12:in `call'
+rack (2.0.3) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.3) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.4) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.4) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/home/transactionrequestorder" for 127.0.0.1 at 2018-03-10 18:33:50 +0300
+Processing by HomeController#transactionrequestorder as HTML
+Completed 406 Not Acceptable in 290ms
+
+
+  
+ActionController::UnknownFormat (HomeController#transactionrequestorder is missing a template for this request format and variant.
+
+request.formats: ["text/html"]
+request.variant: []
+
+NOTE! For XHR/Ajax or API requests, this action would normally respond with 204 No Content: an empty white screen. Since you're loading it in a web browser, we assume that you expected to actually render a template, not nothing, so we're showing an error to be extra-clear. If you expect 204 No Content, carry on. That's what you'll get from an XHR or API request. Give it a shot.):
+  
+actionpack (5.1.4) lib/action_controller/metal/implicit_render.rb:53:in `default_render'
+actionpack (5.1.4) lib/action_controller/metal/basic_implicit_render.rb:4:in `block in send_action'
+actionpack (5.1.4) lib/action_controller/metal/basic_implicit_render.rb:4:in `tap'
+actionpack (5.1.4) lib/action_controller/metal/basic_implicit_render.rb:4:in `send_action'
+actionpack (5.1.4) lib/abstract_controller/base.rb:186:in `process_action'
+actionpack (5.1.4) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (5.1.4) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+activesupport (5.1.4) lib/active_support/callbacks.rb:131:in `run_callbacks'
+actionpack (5.1.4) lib/abstract_controller/callbacks.rb:19:in `process_action'
+actionpack (5.1.4) lib/action_controller/metal/rescue.rb:20:in `process_action'
+actionpack (5.1.4) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+activesupport (5.1.4) lib/active_support/notifications.rb:166:in `block in instrument'
+activesupport (5.1.4) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+activesupport (5.1.4) lib/active_support/notifications.rb:166:in `instrument'
+actionpack (5.1.4) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+actionpack (5.1.4) lib/action_controller/metal/params_wrapper.rb:252:in `process_action'
+activerecord (5.1.4) lib/active_record/railties/controller_runtime.rb:22:in `process_action'
+actionpack (5.1.4) lib/abstract_controller/base.rb:124:in `process'
+actionview (5.1.4) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.1.4) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.4) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:834:in `call'
+rack (2.0.3) lib/rack/etag.rb:25:in `call'
+rack (2.0.3) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.3) lib/rack/head.rb:12:in `call'
+rack (2.0.3) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.3) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.4) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.4) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/home/transactionrequestorder" for 127.0.0.1 at 2018-03-10 18:34:34 +0300
+Processing by HomeController#transactionrequestorder as HTML
+Completed 406 Not Acceptable in 293ms
+
+
+  
+ActionController::UnknownFormat (HomeController#transactionrequestorder is missing a template for this request format and variant.
+
+request.formats: ["text/html"]
+request.variant: []
+
+NOTE! For XHR/Ajax or API requests, this action would normally respond with 204 No Content: an empty white screen. Since you're loading it in a web browser, we assume that you expected to actually render a template, not nothing, so we're showing an error to be extra-clear. If you expect 204 No Content, carry on. That's what you'll get from an XHR or API request. Give it a shot.):
+  
+actionpack (5.1.4) lib/action_controller/metal/implicit_render.rb:53:in `default_render'
+actionpack (5.1.4) lib/action_controller/metal/basic_implicit_render.rb:4:in `block in send_action'
+actionpack (5.1.4) lib/action_controller/metal/basic_implicit_render.rb:4:in `tap'
+actionpack (5.1.4) lib/action_controller/metal/basic_implicit_render.rb:4:in `send_action'
+actionpack (5.1.4) lib/abstract_controller/base.rb:186:in `process_action'
+actionpack (5.1.4) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (5.1.4) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+activesupport (5.1.4) lib/active_support/callbacks.rb:131:in `run_callbacks'
+actionpack (5.1.4) lib/abstract_controller/callbacks.rb:19:in `process_action'
+actionpack (5.1.4) lib/action_controller/metal/rescue.rb:20:in `process_action'
+actionpack (5.1.4) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+activesupport (5.1.4) lib/active_support/notifications.rb:166:in `block in instrument'
+activesupport (5.1.4) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+activesupport (5.1.4) lib/active_support/notifications.rb:166:in `instrument'
+actionpack (5.1.4) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+actionpack (5.1.4) lib/action_controller/metal/params_wrapper.rb:252:in `process_action'
+activerecord (5.1.4) lib/active_record/railties/controller_runtime.rb:22:in `process_action'
+actionpack (5.1.4) lib/abstract_controller/base.rb:124:in `process'
+actionview (5.1.4) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.1.4) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.4) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:834:in `call'
+rack (2.0.3) lib/rack/etag.rb:25:in `call'
+rack (2.0.3) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.3) lib/rack/head.rb:12:in `call'
+rack (2.0.3) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.3) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.4) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.4) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/home/transactionrequestorder" for 127.0.0.1 at 2018-03-10 18:35:33 +0300
+Processing by HomeController#transactionrequestorder as HTML
+  Rendering home/transactionrequestorder.erb within layouts/application
+  Rendered home/transactionrequestorder.erb within layouts/application (0.5ms)
+Completed 200 OK in 33ms (Views: 24.9ms)
+
+
+Started POST "/home/transactionrequestorder" for 127.0.0.1 at 2018-03-10 18:35:39 +0300
+Processing by HomeController#transactionrequestorder as HTML
+  Parameters: {"orderId"=>"3f5dbb30-8e58-43cd-a928-1c00b822eb82"}
+Completed 500 Internal Server Error in 296ms
+
+
+  
+Savon::SOAPFault ((soap:Client) Server was unable to read request. ---> There is an error in XML document (1, 319). ---> Unrecognized Guid format.):
+  
+app/helpers/deactivesubscriber.rb:9:in `execute'
+app/controllers/home_controller.rb:199:in `transactionrequestorder'
+Started GET "/home/transactionrequestorder" for 127.0.0.1 at 2018-03-10 18:36:40 +0300
+Processing by HomeController#transactionrequestorder as HTML
+  Rendering home/transactionrequestorder.erb within layouts/application
+  Rendered home/transactionrequestorder.erb within layouts/application (0.5ms)
+Completed 200 OK in 34ms (Views: 25.3ms)
+
+
+Started POST "/home/transactionrequestorder" for 127.0.0.1 at 2018-03-10 18:36:43 +0300
+Processing by HomeController#transactionrequestorder as HTML
+  Parameters: {"orderId"=>"3f5dbb30-8e58-43cd-a928-1c00b822eb82"}
+  Rendering home/transactionrequestorder.erb within layouts/application
+  Rendered home/transactionrequestorder.erb within layouts/application (0.5ms)
+Completed 200 OK in 372ms (Views: 19.3ms)
+
+
+Started GET "/home/transactionrequestorder" for 127.0.0.1 at 2018-03-10 18:46:59 +0300
+Processing by HomeController#transactionrequestorder as HTML
+  Rendering home/transactionrequestorder.erb within layouts/application
+  Rendered home/transactionrequestorder.erb within layouts/application (1.0ms)
+Completed 200 OK in 28ms (Views: 20.8ms)
+
+
+Started GET "/home/transactionrequestbympay" for 127.0.0.1 at 2018-03-10 18:47:02 +0300
+Processing by HomeController#transactionrequestbympay as HTML
+  Rendering home/transactionrequestbympay.erb within layouts/application
+  Rendered home/transactionrequestbympay.erb within layouts/application (1.0ms)
+Completed 200 OK in 35ms (Views: 27.8ms)
+
+
+Started POST "/home/transactionrequestbympay" for 127.0.0.1 at 2018-03-10 18:47:04 +0300
+Processing by HomeController#transactionrequestbympay as HTML
+  Parameters: {"MPAY"=>"001"}
+Completed 500 Internal Server Error in 3ms
+
+
+  
+SyntaxError (D:/wirecardgithub/wirecardtr-ruby/app/helpers/transactionrequestbympay.rb:5: formal argument cannot be a constant
+    def execute(MPAY , token)
+                    ^):
+  
+app/helpers/transactionrequestbympay.rb:5: formal argument cannot be a constant
+app/controllers/home_controller.rb:217:in `transactionrequestbympay'
+Started GET "/home/transactionrequestbympay" for 127.0.0.1 at 2018-03-10 18:49:27 +0300
+Processing by HomeController#transactionrequestbympay as HTML
+  Rendering home/transactionrequestbympay.erb within layouts/application
+  Rendered home/transactionrequestbympay.erb within layouts/application (0.0ms)
+Completed 200 OK in 32ms (Views: 25.4ms)
+
+
+Started POST "/home/transactionrequestbympay" for 127.0.0.1 at 2018-03-10 18:49:30 +0300
+Processing by HomeController#transactionrequestbympay as HTML
+  Parameters: {"MPay"=>"001"}
+Completed 500 Internal Server Error in 3ms
+
+
+  
+SyntaxError (D:/wirecardgithub/wirecardtr-ruby/app/helpers/transactionrequestbympay.rb:5: formal argument cannot be a constant
+    def execute(MPay , token)
+                    ^):
+  
+app/helpers/transactionrequestbympay.rb:5: formal argument cannot be a constant
+app/controllers/home_controller.rb:217:in `transactionrequestbympay'
+Started GET "/home/transactionrequestbympay" for 127.0.0.1 at 2018-03-10 18:51:05 +0300
+Processing by HomeController#transactionrequestbympay as HTML
+  Rendering home/transactionrequestbympay.erb within layouts/application
+  Rendered home/transactionrequestbympay.erb within layouts/application (1.0ms)
+Completed 200 OK in 30ms (Views: 23.6ms)
+
+
+Started POST "/home/transactionrequestbympay" for 127.0.0.1 at 2018-03-10 18:51:07 +0300
+Processing by HomeController#transactionrequestbympay as HTML
+  Parameters: {"MPay"=>"001"}
+  Rendering home/transactionrequestbympay.erb within layouts/application
+  Rendered home/transactionrequestbympay.erb within layouts/application (1.0ms)
+Completed 200 OK in 405ms (Views: 35.8ms)
+
+

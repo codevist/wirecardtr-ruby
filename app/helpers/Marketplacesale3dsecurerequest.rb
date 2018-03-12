@@ -18,6 +18,7 @@ class Marketplacesale3dsecurerequest
     attr_accessor :CommissionRate
     attr_accessor :SubPartnerId
     attr_accessor :PaymentContent
+    attr_accessor :Cardtokenization
     
     def execute(req,settings)
         result= Core::HttpClient::post(settings.BaseUrl,self.to_xml(req));
@@ -43,8 +44,15 @@ class Marketplacesale3dsecurerequest
             <ExpireMonth>"+req.Creditcardinfo.ExpireMonth+"</ExpireMonth>
             <Cvv>"+req.Creditcardinfo.Cvv+"</Cvv>
             <Price>"+req.Creditcardinfo.Price+"</Price>
-	    </CreditCardInfo>
+        </CreditCardInfo>
+        <CardTokenization>
+            <RequestType>"+req.Cardtokenization.RequestType+"</RequestType>
+            <CustomerId>"+req.Cardtokenization.CustomerId+"</CustomerId>
+            <ValidityPeriod>"+req.Cardtokenization.ValidityPeriod+"</ValidityPeriod>
+            <CCTokenId>"+req.Cardtokenization.CCTokenId+"</CCTokenId>
+	    </CardTokenization>
             <MPAY>"+req.MPAY+"</MPAY>
+            <Port>"+req.Port+"</Port>
             <ExtraParam>"+req.ExtraParam+"</ExtraParam>
             <Description>"+req.Description+"</Description>
             <IPAddress>"+req.IPAddress+"</IPAddress>

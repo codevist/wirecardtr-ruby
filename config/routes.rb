@@ -10,6 +10,7 @@ Rails.application.routes.draw do
   get 'home/selectsubscriberdetail'
   get 'home/deactivatesubscriber'
   get 'home/ccproxysaleform'
+  get 'home/ccproxysale3dform'
   get 'home/wdticketsale3durlproxy'
   get 'home/wdticketsaleurlproxy'
   get 'home/marketplaceaddsubpartner'
@@ -17,6 +18,8 @@ Rails.application.routes.draw do
   get 'home/marketplacesale3dsec'
   get 'home/marketplacempsale'
   get 'home/marketplacereleasepayment'
+  get 'home/transactionrequestorder'
+  get 'home/transactionrequestbympay'
   get 'home/success'
   get 'home/fail'
 
@@ -28,6 +31,7 @@ Rails.application.routes.draw do
   post 'home/selectsubscriberdetail'  
   post 'home/deactivatesubscriber'  
   post 'home/ccproxysaleform'
+  post 'home/ccproxysale3dform'
   post 'home/wdticketsaleurlproxy'
   post 'home/wdticketsale3durlproxy'
   post 'home/marketplaceaddsubpartner'
@@ -37,6 +41,9 @@ Rails.application.routes.draw do
   post 'home/marketplacempsale'
   post 'home/marketplacereleasepayment'
   post 'home/informationsmsservice'
+
+  post 'home/transactionrequestorder'
+  post 'home/transactionrequestbympay'
 
 
   
